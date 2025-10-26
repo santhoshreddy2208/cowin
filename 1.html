@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .navbar {
+      width:100%;
+      background:#1e295d;
+      overflow: hidden;
+    }
+
+    /* Navbar links */
+    .navbar a {
+      text-align: left;
+      padding: 13px;
+      color: rgb(230, 223, 223);
+      text-decoration:none;
+      font-size: 20px;
+      font-family:Arial;
+    }
+
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+      background-color: rgb(10, 10, 10);
+    }
+
+    /* Current/active navbar link */
+    .active {
+      background-color: #e60b0b;
+    }
+
+    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: auto;
+      }
+    }
+    body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<fieldset>
+
+<div class="navbar">
+    <a  href="./cowin.html">COWIN</a>
+    <a href="./REGISTER.html"><i class="fa fa-fw fa-id-card-o" style="margin-left:80px;"></i> ABHA(Health Id)</a>
+    <a href="./dashboard.html"><i class=""></i>Dashboard</a>
+    <a href="./scanner.html"><i class="fa fa-fw fa-certificate"></i> Verify Certificate</a>
+    <a href="./faqs.html"><i class="  "></i> FAQ's</a>
+    <a href="./partners.html"><i class=""></i>Partners</a>
+    <a class="active" href="./1.html"><i class="fa fa-fw fa-mail-forward"></i>Register/Sign In</a>
+  </div>
+
+</fieldset>
+
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 align="center"><ins>REGISTER/SIGN-IN</ins></h1
+    <p><b><ins>Please fill the form to register or sign-in for vaccine:</ins></b></p>
+    <hr>
+
+    <label for="name"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="email" required>
+
+    <label for="name"><b>Mobile_Number:</b></label>
+    <input type="text" placeholder="Enter Mobile_Number" name="name" id="email" required>
+
+
+   <label for="name"><b>ADHAR Number:</b></label>
+    <input type="text" placeholder="Enter ADHAR Number" name="name" id="email" required>
+
+    <hr>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">By Registering you are agreing to your
+    </label><a href="#">Terms & Privacy</a>
+
+    <button type="submit" class="registerbtn">SIGN-UP</button>
+  </div>
+ 
+</form>
+
+</body>
+</html>
+śś

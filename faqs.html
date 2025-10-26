@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .navbar {
+      width:100%;
+      background:#1e295d;
+      overflow: hidden;
+    }
+
+    /* Navbar links */
+    .navbar a {
+      text-align: left;
+      padding: 13px;
+      color: rgb(230, 223, 223);
+      text-decoration:none;
+      font-size: 20px;
+      font-family:Arial;
+    }
+
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+      background-color: rgb(10, 10, 10);
+    }
+
+    /* Current/active navbar link */
+    .active {
+      background-color: #e60b0b;
+    }
+
+    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: auto;
+      }
+    }
+    body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<fieldset>
+
+<div class="navbar">
+    <a  href="./cowin.html">COWIN</a>
+    <a href="./REGISTER.html"><i class="fa fa-fw fa-id-card-o" style="margin-left:80px;"></i> ABHA(Health Id)</a>
+    <a href="./dashboard.html"><i class=""></i>Dashboard</a>
+    <a href="./scanner.html"><i class="fa fa-fw fa-certificate"></i> Verify Certificate</a>
+    <a class="active" href="./faqs.html"><i class="  "></i> FAQ's</a>
+    <a href="./partners.html"><i class=""></i>Partners</a>
+    <a href="./1.html"><i class="fa fa-fw fa-mail-forward"></i>Register/Sign In</a>
+  </div>
+
+</fieldset>
+
+    <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">1.Where can i register for COVID vaccination?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>You can open the COWIN portal using the link www.cowin.in and click on "register/sign in".</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">2.Which age groups can register for vaccination on COWIN?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Those who have completed 12 years of age on the day of registration can register for vaccination.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">3.Is online registration mandatory?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>No,vaccination centers provide for a limited number of on-slot registrations per day.so,online registration is recommended for hustle free vaccination.</p>
+                </div>
+            </div>
+  	    <div class="faq-four">
+                <!-- faq question -->
+                <h1 class="faq-page">4.Is there any registration charge to be paid?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>No,there is no registration charge.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">5.How many members can be registered using same mobile number?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Up to 6 members can be registered using same mobile number.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">6.Can i register without Aadhar card?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Yes,if you are above 18 years old you can register with any of the following proofs;
+			a.Aadhar
+			b.Driving license
+			c.PAN card
+			d.Passport
+			e.Pension passbook
+			f.NPR smart card
+			g.Voter ID
+			h.Unique disability identification card
+		      if you are 12 or above you can register with following proofs;
+			a.Aadhar
+			b.Unique disability identification card
+			c.PAN card
+			d.Passport
+			e.Ration card with photo
+			f.Student photo with ID card.</p>
+                </div>
+            </div>
+        
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

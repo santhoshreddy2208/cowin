@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.navbar {
+  width:100%;
+  background:#1e295d;
+  overflow: hidden;
+}
+.navbar a {
+  text-align: left;
+  padding: 13px;
+  color: rgb(230, 223, 223);
+  text-decoration:none;
+  font-size: 20px;
+  font-family:Arial;
+}
+.navbar a:hover {
+  background-color: rgb(10, 10, 10);
+}
+.active {
+  background-color: #e60b0b;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="./cowin.html">COWIN</a>
+  <a class="active" href="./REGISTER.html">ABHA (Health Id)</a>
+  <a href="./dashboard.html">Dashboard</a>
+  <a href="./scanner.html">Verify Certificate</a>
+  <a href="./faqs.html">FAQ's</a>
+  <a href="./partners.html">Partners</a>
+  <a href="./1.html">Register/Sign In</a>
+</div>
+
+<form action="register.php" method="POST">
+  <div class="container">
+    <h1 align="center"><ins>COWIN</ins></h1>
+    <p><b><ins>Create your COWIN Account:</ins></b></p>
+    <hr>
+
+    <label for="name"><b>Full Name:</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+
+    <label for="userid"><b>User ID</b></label>
+    <input type="text" placeholder="Enter your ID" name="userid" id="userid" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter your Password" name="password" id="password" required>
+
+    <label for="confirm_password"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Re-enter your Password" name="confirm_password" id="confirm_password" required>
+    <hr>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I agree to the following 
+    </label><a href="#">Terms & Privacy</a>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
+
+</body>
+</html>
